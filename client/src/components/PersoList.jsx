@@ -17,16 +17,16 @@ const PersoList = ({
     >
       {/* Avatar or Initials */}
       <div className="w-12 h-12 relative bg-red-400 rounded-full flex items-center justify-center">
-        <span className="text-white font-bold text-xl">
+        <div className="text-white font-bold text-xl">
           {onlinePeople ? onlinePeople.toUpperCase() : ""}
-        </span>
-        {/* Online Status Indicator */}
+        </div>
         {online ? (
-          <div className="absolute w-3 h-3 bg-green-400 bottom-0 right-0 rounded-full border border-white"></div>
+          <div className="absolute w-6 h-6 bottom-0 bg-green-500 right-0 rounded-full border border-white"></div>
         ) : (
           <div className="absolute w-3 h-3 bg-gray-400 bottom-0 right-0 rounded-full border border-white"></div>
         )}
       </div>
+
       {/* Username */}
       <div className="text-sm ml-3">
         {username.charAt(0).toUpperCase() + username.slice(1)}

@@ -192,7 +192,7 @@ const Chat = () => {
             placeholder="Search..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="p-2 w-full border-b"
+            className="p-2 w-full border-b mb-4"
           />
           {filteredOnlinePeople.map((userId) => (
             <PersoList
