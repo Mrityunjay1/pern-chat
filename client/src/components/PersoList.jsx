@@ -21,7 +21,7 @@ const PersoList = ({
           {onlinePeople ? onlinePeople.toUpperCase() : ""}
         </div>
         {online ? (
-          <div className="absolute w-6 h-6 bottom-0 bg-green-500 right-0 rounded-full border border-white"></div>
+          <div className="absolute w-10 h-10 bottom-0 bg-green-500 right-3 rounded-full border border-white"></div>
         ) : (
           <div className="absolute w-3 h-3 bg-gray-400 bottom-0 right-0 rounded-full border border-white"></div>
         )}
